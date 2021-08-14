@@ -55,16 +55,16 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 // you get back an array from sum!!!
 // make sure your get the correct index number to get the number from sum
-let sumTotal = sum(a, b); 
-sumTotal = sum(sumTotal[0], c);
+  let sumTotal = sum(a, b); 
+  sumTotal = sum(sumTotal[0], c);
 
-let productTotal = multiply(a,b);
-productTotal = multiply(productTotal[0], c);
+  let productTotal = multiply(a,b);
+  productTotal = multiply(productTotal[0], c);
 
-let sumString = a + ' and ' + b + ' and ' + c + ' sum to ' + sumTotal[0] + '.';
-let productString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productTotal[0] + '.';
+  let sumString = a + ' and ' + b + ' and ' + c + ' sum to ' + sumTotal[0] + '.';
+  let productString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productTotal[0] + '.';
 
-return [sumTotal[0], productTotal[0], sumString, productString];
+  return [sumTotal[0], productTotal[0], sumString, productString];
 
 }
 
@@ -87,11 +87,11 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-let arrayTotal = sumAndMultiply(testArray[0], testArray[1], testArray[2], );
+  let arrayTotal = sumAndMultiply(testArray[0], testArray[1], testArray[2], );
 
-let sumArrayString = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + arrayTotal[0] + ' is their sum.';
+  let sumArrayString = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + arrayTotal[0] + ' is their sum.';
 
-return [arrayTotal[0], sumArrayString]
+  return [arrayTotal[0], sumArrayString]
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -112,11 +112,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  let arrayProduct = sumAndMultiply(testArray[0], testArray[1], testArray[2], );
 
+  let sumArrayString = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + arrayProduct[1] + '.';
+
+  return [arrayProduct[1], sumArrayString]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
